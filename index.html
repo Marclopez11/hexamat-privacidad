@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Hexamat · Política de privacidad</title>
+  <style>
+    :root { --bg: #fbf7ef; --text: #221d2e; --muted: #5d566a; --accent: #5b4bdb; color-scheme: light; }
+    @media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) { --bg: #14121c; --text: #f1edf8; --muted: #b2aac4; --accent: #8b7dff; color-scheme: dark; } }
+    :root[data-theme="dark"] { --bg: #14121c; --text: #f1edf8; --muted: #b2aac4; --accent: #8b7dff; color-scheme: dark; }
+    body { margin: 0; background: var(--bg); color: var(--text); font: 16px/1.6 system-ui, -apple-system, 'Segoe UI', sans-serif; }
+    main { max-width: 680px; margin: 0 auto; padding: 32px 16px 48px; }
+    h1 { font-size: 28px; margin: 0 0 4px; }
+    h2 { font-size: 19px; margin: 28px 0 6px; }
+    p, li { color: var(--muted); }
+    li { margin-bottom: 4px; }
+    a { color: var(--accent); }
+    .lang { font-size: 14px; }
+    hr { border: 0; border-top: 1px solid color-mix(in srgb, var(--muted) 30%, transparent); margin: 40px 0; }
+  </style>
+</head>
+<body>
+<main>
+  <h1>Política de privacidad de Hexamat</h1>
+  <p>Última actualización: 21 de octubre de 2026</p>
+
+  <h2>1. Quién es el responsable</h2>
+  <p>Hexamat es un juego de puzles matemáticos desarrollado de forma independiente. Para cualquier duda sobre privacidad, abre una incidencia en <a href="https://github.com/__GITHUB_USER__/hexamat-privacidad/issues">github.com/__GITHUB_USER__/hexamat-privacidad/issues</a>.</p>
+
+  <h2>2. Resumen</h2>
+  <ul>
+    <li>El progreso (panales resueltos, puntos, racha, logros y ajustes) se guarda en tu dispositivo.</li>
+    <li>El modo 1 contra 1 online es opcional. Solo entonces se usan servidores de Google Firebase, con un identificador anónimo y tu apodo.</li>
+    <li>La app muestra anuncios de Google AdMob. Puede usar el identificador de publicidad de tu dispositivo.</li>
+    <li>No pedimos correo electrónico, nombre real, teléfono, ubicación precisa ni contactos. No hay registro de cuentas.</li>
+    <li>No vendemos datos personales.</li>
+  </ul>
+
+  <h2>3. Datos que se guardan en tu dispositivo</h2>
+  <p>Tu progreso y tus ajustes se guardan en el almacenamiento local de la app. Para que no se pierdan al reinstalar o al cambiar de móvil, también se guardan en:</p>
+  <ul>
+    <li><strong>Android:</strong> la copia de seguridad automática de tu cuenta de Google (si la tienes activada).</li>
+    <li><strong>iPhone:</strong> el llavero (Keychain) de tu dispositivo, que iOS conserva aunque borres la app, y la copia de seguridad de iCloud o de tu dispositivo.</li>
+  </ul>
+  <p>Estas copias las gestiona el sistema operativo y solo tú puedes acceder a ellas. Hexamat no las envía a ningún servidor propio.</p>
+
+  <h2>4. Modo 1 contra 1 online (Google Firebase)</h2>
+  <p>Solo si juegas online, la app crea un identificador anónimo de sesión con Firebase Authentication. Para jugar y aparecer en el ranking se guardan:</p>
+  <ul>
+    <li>Tu identificador anónimo (no está ligado a tu nombre, correo ni cuenta de Google o Apple).</li>
+    <li>Tu apodo. Por defecto se genera uno aleatorio y puedes cambiarlo en cualquier momento.</li>
+    <li>Tu racha de victorias y tus puntos del mes en curso.</li>
+    <li>Los datos temporales de la sala de la partida, que se borran al terminar.</li>
+  </ul>
+  <p>Los datos se guardan en la base de datos Realtime Database de Firebase en la región europea (europe-west1, Bélgica). Al empezar un nuevo mes, las rachas del mes anterior se borran. Si cambias de dispositivo, el nuevo identificador es distinto y no se vinculan las rachas anteriores.</p>
+  <p>Google actúa como proveedor de estos servicios. Puedes consultar su política en <a href="https://firebase.google.com/support/privacy">firebase.google.com/support/privacy</a>.</p>
+
+  <h2>5. Anuncios (Google AdMob)</h2>
+  <p>La versión gratuita de Hexamat muestra anuncios de Google AdMob: un vídeo opcional al pedir una pista y algún anuncio intersticial entre panales. AdMob puede tratar:</p>
+  <ul>
+    <li>El identificador de publicidad de tu dispositivo.</li>
+    <li>Datos técnicos del dispositivo y de la conexión, incluida la dirección IP y una ubicación aproximada.</li>
+    <li>La interacción con los anuncios.</li>
+  </ul>
+  <p>En la Unión Europea, Reino Unido y otros países con normas equivalentes, la app muestra un formulario de consentimiento de Google (UMP) antes de los anuncios. Si no das tu consentimiento, los anuncios serán no personalizados. En iPhone, la app pide permiso de seguimiento (ATT) y, si lo rechazas, no se usa tu identificador de publicidad. Puedes cambiar estas decisiones en los ajustes del sistema en cualquier momento.</p>
+  <p>Más información: <a href="https://policies.google.com/technologies/partner-sites">policies.google.com/technologies/partner-sites</a>.</p>
+
+  <h2>6. Compras</h2>
+  <p>La compra única "Quitar anuncios" la procesa Google Play o la App Store. Hexamat no recibe tu medio de pago ni tus datos bancarios; solo comprueba si la compra está activa, para no mostrar anuncios.</p>
+
+  <h2>7. Notificaciones y compartir</h2>
+  <ul>
+    <li>El recordatorio diario, si lo activas, es una notificación local programada en tu dispositivo. No usa ningún servidor.</li>
+    <li>El botón de compartir abre el menú de tu sistema con un texto o una imagen que puedes revisar antes de enviarlo. Hexamat no envía nada por sí misma.</li>
+  </ul>
+
+  <h2>8. Menores</h2>
+  <p>Hexamat no recoge datos personales de forma intencionada de menores. Si eres menor de 14 años, pide a tu familia que revise esta política antes de usar la app o el modo online.</p>
+
+  <h2>9. Tus derechos</h2>
+  <p>Puedes acceder a tus datos, corregirlos, pedir que se borren o limitar su uso, y retirar tu consentimiento para los anuncios personalizados. Para el progreso local, basta con desinstalar la app o borrar sus datos desde los ajustes del sistema (tenga en cuenta que las copias de seguridad del sistema se borran desde tu cuenta de Google o de Apple). Para borrar tu entrada online, abre una incidencia en el enlace de arriba indicando tu apodo: la eliminaremos en un plazo de 30 días.</p>
+  <p>Si estás en la Unión Europea, también puedes reclamar ante tu autoridad de protección de datos (en España, la <a href="https://www.aepd.es">AEPD</a>).</p>
+
+  <h2>10. Cambios</h2>
+  <p>Si cambiamos esta política, actualizaremos la fecha de arriba y, si el cambio es importante, lo indicaremos en la app.</p>
+
+  <hr />
+
+  <h1 lang="en">Hexamat privacy policy</h1>
+  <p lang="en" class="lang">Last updated: 21 October 2026</p>
+  <p lang="en">Hexamat stores your progress and settings on your device. The optional online 1 vs 1 mode uses Google Firebase with an anonymous ID and your nickname (no email, real name or Google/Apple account). The free version shows Google AdMob ads, which may use your device advertising ID, approximate location and IP address; in the EU/UK you are asked for consent (UMP) first, and on iPhone you are asked for tracking permission (ATT). In-app purchases are processed by Google Play or the App Store, and Hexamat only checks whether the purchase is active. We do not sell personal data. Your data can be deleted by uninstalling the app, or by asking for your online entry to be removed through the issues link above. Contact: <a href="https://github.com/__GITHUB_USER__/hexamat-privacidad/issues">GitHub issues</a>.</p>
+</main>
+</body>
+</html>
